@@ -38,7 +38,6 @@ var userWelcome= confirm("We would like to welcome you to our website");
 if ((userWelcome===true)&&(userGender!=(("male")) && (userGender!=("female")))) {
       alert("you are most welcome "+userName) }
 
-else { alert("As you want "+userName) }
 
 
 
