@@ -38,32 +38,24 @@ var userWelcome= confirm("We would like to welcome you to our website");
 if ((userWelcome===true)&&(userGender!=(("male")) && (userGender!=("female")))) {
       alert("you are most welcome "+userName) }
 
-else { alert("As you want "+userName) }
 
 
+var moreQu = confirm("Are you interested to ask you more ?") ;
+if (moreQu===true){
 
-var moreQu = prompt("Are you interested to ask you more ?") ;
+var intrest = prompt("Are you interested to manage your life (yes/no) ?") ;
+if(intrest==="") {alert("invalid choice"); intrest="invalid" } ;
 
-if (moreQu==="yes"){
 
-var intrest = prompt("Are you interested to manage your life ?") ;
-if(intrest=="")
-{intrest="invalid" };
+var haveWork = prompt("Do you have too much work need manage perfectly(yes/no)? ") ;
+if(haveWork==="") {alert("invalid choice"); haveWork="invalid" } ;
 
-var haveWork = prompt("Do you have too much work need manage perfectly ") ;
-if(haveWork=="")
-{haveWork="invalid" };
+var needTool = prompt("Do you have took or something manage your work? (yes/no)") ;
+if(needTool==="") {alert("invalid choice"); needTool="invalid" } ;
 
-var needTool = prompt("Do you have took or something manage your work") ;
-if(needTool=="")
-{needTool="invalid" };
 
-const arr=[intrest ,haveWork,needTool];
-// console.log(Arr);
-var i;
-for (var i=0;i<4;i++) {
-  console.log(arr[i]);
-  
-}
+let arr=[];
 
+arr.push(intrest,haveWork,needTool)
+console.log(arr);
 }
