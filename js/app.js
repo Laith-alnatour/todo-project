@@ -59,3 +59,4 @@ let arr=[];
 arr.push(intrest,haveWork,needTool)
 console.log(arr);
 }
+
